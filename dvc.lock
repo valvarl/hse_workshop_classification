@@ -1,0 +1,24 @@
+schema: '2.0'
+stages:
+  preproc:
+    cmd: python ./pipelines/preprocessing.py
+    deps:
+    - path: ./data/raw/test.csv
+      md5: f4088e849b8f561eb3e9055a4251567a
+      size: 248941
+    - path: ./data/raw/train.csv
+      md5: 3fe5dc9c07027b120ea0ff061018594d
+      size: 399312
+    - path: ./pipelines/preprocessing.py
+      md5: 69fb53e05fe3ff2510532c34b87f9250
+      size: 1960
+    outs:
+    - path: ./data/processed/target.pkl
+      md5: 9bd5d7ceaaa05e4e6884d4e7d2da93b8
+      size: 39114
+    - path: ./data/processed/test.pkl
+      md5: 5d9ab97626c8b67f3b692e8ea0d8d47d
+      size: 43813
+    - path: ./data/processed/train.pkl
+      md5: 9f1b5934ea2d74371c14246cc5d05829
+      size: 62232

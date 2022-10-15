@@ -1,0 +1,11 @@
+stages:
+  preproc:
+    cmd: python ./pipelines/preprocessing.py
+    deps:
+    - ./data/raw/test.csv
+    - ./data/raw/train.csv
+    - ./pipelines/preprocessing.py
+    outs:
+    - ./data/processed/target.pkl
+    - ./data/processed/test.pkl
+    - ./data/processed/train.pkl
