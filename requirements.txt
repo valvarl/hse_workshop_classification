@@ -3,6 +3,9 @@
 
 # external requirements
 click
+shap
+catboost
+matplotlib
 Sphinx
 coverage
 awscli
