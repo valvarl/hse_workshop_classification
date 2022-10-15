@@ -82,4 +82,3 @@ def survey(results, category_names):
               loc='lower left', fontsize='small')
 
     return fig, ax
-
